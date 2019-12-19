@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 20191219162249) do
 
   create_table "snacks", force: :cascade do |t|
     t.string "name"
-    t.integer "price"
+    t.float "price"
     t.bigint "machine_id"
     t.index ["machine_id"], name: "index_snacks_on_machine_id"
   end

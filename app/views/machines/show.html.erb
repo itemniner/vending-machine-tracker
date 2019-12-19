@@ -4,5 +4,6 @@
 <p>snack: <%= snack.name %></p>
 <p>price: <%= snack.price.to_f %></p>
 <% end %>
-<% binding.pry %>
-<%= '%1.1f' %  @machine.average_price %>
+<% if !@machine.snacks.empty?%>
+<%= '%1.1f' % @machine.average_price %>
+<% end %>
